@@ -1,3 +1,5 @@
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
@@ -21,7 +23,6 @@
     --sage: #e0eadf;
     --sky: #dfe9f2;
     --butter: #f7eed4;
-    
     --lilac: #e9e3f1;
   }
   * { box-sizing: border-box; }
@@ -80,6 +81,12 @@
   .skills dt { font-family: "Bricolage Grotesque", Georgia, serif; font-weight: 700; font-size: 1.1rem; margin-bottom: 6px; }
   .skills dd { margin: 0; color: #4d4448; font-size: 0.97rem; }
  
+  /* Certifications */
+  .cover.fit { background: #fff; }
+  .cover.fit img { object-fit: contain; object-position: center; }
+  .tile.static:hover { transform: none; box-shadow: none; }
+  .issuer { font-size: 0.9rem; color: var(--muted); margin: 0; }
+ 
   /* About */
   .about { display: grid; grid-template-columns: 1fr 2fr; gap: 16px 64px; }
   .about h2 { margin: 0; }
@@ -106,7 +113,8 @@
       <ul class="links">
         <li><a href="https://www.linkedin.com/in/nanditajassal/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         <li><a href="https://github.com/NanditaJassal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-       
+     
+      </ul>
     </div>
   </header>
  
@@ -131,7 +139,7 @@
           <h3><a href="https://github.com/NanditaJassal/data-job-postings" target="_blank" rel="noopener noreferrer">Job market analysis</a></h3>
           <p>What do current job postings show about demand, skills and trends? SQL to shape the data, Tableau to explore it.</p>
 
-            <ul class="tags"><li class="c-sky">MySQL</li><li class="c-lilac">Tableau</li><li class="c-butter">Dashboard</li></ul>
+          <ul class="tags"><li class="c-sky">MySQL</li><li class="c-lilac">Tableau</li><li class="c-butter">Dashboard</li></ul>
         </div>
       </article>
  
@@ -150,12 +158,12 @@
         <div class="body">
           <h3><a href="https://github.com/NanditaJassal/automation-roi-calculator" target="_blank" rel="noopener noreferrer">Automation ROI calculator</a></h3>
           <p>Compares manual and automated process costs to show whether an automation is worth building and how fast it pays back.</p>
-
-            <ul class="tags"><li class="c-butter">Python</li><li class="c-sage">Excel</li><li class="c-blush">Cost analysis</li></ul>
+    
+          <ul class="tags"><li class="c-butter">Python</li><li class="c-sage">Excel</li><li class="c-blush">Cost analysis</li></ul>
         </div>
       </article>
  
-     
+ 
     </div>
   </section>
  
@@ -167,6 +175,44 @@
       <div class="c-sage"><dt>Automation</dt><dd>Python, ETL pipelines, workflow automation, FTP integrations</dd></div>
       <div class="c-blush"><dt>Data quality</dt><dd>QA workflows, validation rules, UAT, issue tracking</dd></div>
     </dl>
+  </section>
+ 
+  <section id="certifications" aria-labelledby="certs-h">
+    <h2 id="certs-h">Certifications</h2>
+    <div class="gallery">
+ 
+      <article class="tile">
+        <div class="cover fit"><img src="Data%20Science.jpeg" alt="Certificate of Training in Data Science and Machine Learning with Python, awarded to Nandita Jassal in September 2021" loading="lazy"></div>
+        <div class="body">
+          <h3><a href="Data%20Science.jpeg" target="_blank" rel="noopener noreferrer">Data Science, Machine Learning with Python</a></h3>
+          <p class="issuer">Gyansetu, Aranya Consulting, September 2021</p>
+          <p>Six-month course completed at the Gurgaon centre, March to August 2021.</p>
+          <ul class="tags"><li class="c-sage">Python</li><li class="c-sky">Machine learning</li><li class="c-butter">Data science</li></ul>
+        </div>
+      </article>
+ 
+      <article class="tile">
+        <div class="cover fit"><img src="AI_Internship.png" alt="Certificate of Completion from the Symbiosis Centre for Applied Artificial Intelligence for the B.Tech project, 2020 to 2021" loading="lazy"></div>
+        <div class="body">
+          <h3><a href="AI_Internship.png" target="_blank" rel="noopener noreferrer">B.Tech project, Applied Artificial Intelligence</a></h3>
+          <p class="issuer">Symbiosis Centre for Applied Artificial Intelligence, 2020 to 2021</p>
+          <p>Completed my AI internship at the research centre from May 2020 to June 2021.</p>
+          <ul class="tags"><li class="c-blush">Artificial intelligence</li><li class="c-lilac">Research project</li></ul>
+        </div>
+      </article>
+ 
+      <article class="tile static">
+        <div class="cover" style="background: var(--lilac);"><span class="glyph" aria-hidden="true">Claude 101</span></div>
+        <div class="body">
+          <h3>Claude 101</h3>
+          <p class="issuer">Anthropic</p>
+
+          <p>Introductory course on using Claude effectively for everyday work.</p>
+          <ul class="tags"><li class="c-lilac">AI tools</li><li class="c-blush">Productivity</li></ul>
+        </div>
+      </article>
+ 
+    </div>
   </section>
  
   <section id="about" class="about" aria-labelledby="about-h">
@@ -181,4 +227,3 @@
  
 </body>
 </html>
- 
