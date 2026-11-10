@@ -1,6 +1,4 @@
-
-Index · HTML
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en-NZ">
 <head>
 <meta charset="UTF-8">
@@ -91,6 +89,7 @@ Index · HTML
   .about { display: grid; grid-template-columns: 1fr 2fr; gap: 16px 64px; }
   .about h2 { margin: 0; }
   .about p { margin: 0; max-width: 62ch; }
+  .photo { display: block; width: 140px; height: 140px; border-radius: 50%; object-fit: cover; object-position: center top; margin-top: 20px; border: 4px solid var(--card); box-shadow: 0 0 0 1px var(--rule); }
  
   footer { margin-top: 88px; padding-bottom: 48px; color: var(--muted); font-size: 0.95rem; }
   footer .wrap { border-top: 1px solid var(--rule); padding-top: 20px; }
@@ -113,7 +112,6 @@ Index · HTML
       <ul class="links">
         <li><a href="https://www.linkedin.com/in/nanditajassal/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         <li><a href="https://github.com/NanditaJassal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-     
       </ul>
     </div>
   </header>
@@ -138,7 +136,6 @@ Index · HTML
         <div class="body">
           <h3><a href="https://github.com/NanditaJassal/data-job-postings" target="_blank" rel="noopener noreferrer">Job market analysis</a></h3>
           <p>What do current job postings show about demand, skills and trends? SQL to shape the data, Tableau to explore it.</p>
-
           <ul class="tags"><li class="c-sky">MySQL</li><li class="c-lilac">Tableau</li><li class="c-butter">Dashboard</li></ul>
         </div>
       </article>
@@ -148,7 +145,6 @@ Index · HTML
         <div class="body">
           <h3><a href="https://github.com/NanditaJassal/timesheet-cost-analysis/tree/main" target="_blank" rel="noopener noreferrer">Timesheet cost analysis</a></h3>
           <p>Estimates labour cost from timesheet data and shows where the hours and money go.</p>
-
           <ul class="tags"><li class="c-sage">Python</li><li class="c-blush">Data visualisation</li></ul>
         </div>
       </article>
@@ -158,11 +154,9 @@ Index · HTML
         <div class="body">
           <h3><a href="https://github.com/NanditaJassal/automation-roi-calculator" target="_blank" rel="noopener noreferrer">Automation ROI calculator</a></h3>
           <p>Compares manual and automated process costs to show whether an automation is worth building and how fast it pays back.</p>
-    
           <ul class="tags"><li class="c-butter">Python</li><li class="c-sage">Excel</li><li class="c-blush">Cost analysis</li></ul>
         </div>
       </article>
- 
  
     </div>
   </section>
@@ -206,7 +200,6 @@ Index · HTML
         <div class="body">
           <h3>Claude 101</h3>
           <p class="issuer">Anthropic</p>
-
           <p>Introductory course on using Claude effectively for everyday work.</p>
           <ul class="tags"><li class="c-lilac">AI tools</li><li class="c-blush">Productivity</li></ul>
         </div>
@@ -216,7 +209,10 @@ Index · HTML
   </section>
  
   <section id="about" class="about" aria-labelledby="about-h">
-    <h2 id="about-h">About</h2>
+    <div>
+      <h2 id="about-h">About</h2>
+      <img class="photo" src="photo.jpg" alt="Portrait of Nandita Jassal" width="140" height="140" loading="lazy">
+    </div>
     <p>I started as a database developer in Mumbai, building healthcare dashboards on large datasets, then moved into IT support in Auckland before stepping into my current analyst role. I hold a Bachelor of Computer Science from Symbiosis Institute of Technology, Pune. I enjoy the point where clean data, clear reporting and a bit of automation make a team’s day easier.</p>
   </section>
 </div>
@@ -227,3 +223,4 @@ Index · HTML
  
 </body>
 </html>
+ 
